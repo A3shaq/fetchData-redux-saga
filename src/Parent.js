@@ -22,9 +22,6 @@ function Parent() {
 
     return (
         <div>
-            {/* <h1>I'm  Parent</h1>
-            <FirstChild name={title1} age='22' />
-            <SecondChild name={title2} age={19} /> */}
 
             <h1> {flag === true ? <img style={{ width: "50%" }} src={LED} alt="Image Not Found" /> : "No Image Here"}</h1>
 

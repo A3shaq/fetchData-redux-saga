@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 // import Parent from "./Parent"
+import Login from "./screens/Login"
 
 
 //Assigment
@@ -42,14 +43,11 @@ function Main() {
     console.log("name", name)
     return (
 
-        <div>
-            <input placeholder="Take an input from users" value={name} onChange={(e) => handleChangeName(e)} />
+        <React.Fragment>
+            <Login heading="Login" />
+            <Login heading="Signup" />
 
-            <div> <button onClick={() => add(2, 3)}>Run My Function</button>
-
-            </div>
-        </div>
-
+        </React.Fragment>
     )
 }
 
